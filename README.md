@@ -10,5 +10,7 @@ Projeto youtube clone desenvolvido no curso desenvolvimento web do Clucas Caton.
 
 
 <h2>Tecnologias</h2>
-- Css3
-- HTML
+ <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+</ul>
