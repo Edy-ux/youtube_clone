@@ -1,5 +1,5 @@
 # youtube_clone
-Projeto youtube clone desenvolvido no curso Do Clucas Caton. Aplicando conhecimento de css grid e flex box.
+Projeto youtube clone desenvolvido no curso desenvolvimento web do Clucas Caton. Aplicando conhecimentos de css grid e flex box.
 
 
 
