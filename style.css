@@ -250,6 +250,11 @@ main {
     display:none;
   }
 
+  .subscribe .button{
+    padding:7px 5px;
+    font-size: 13px;
+  }
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -273,7 +278,5 @@ main {
        ".               .           up-next"                               
       ;
   }  
-                                   
-
-
+                                  
 }
