@@ -1,10 +1,10 @@
 /* Reset Css */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #f9f9f9;
   font-family: "roboto", sans-serif;
@@ -47,14 +47,32 @@ a {
 }
 
 .subscribe .button {
-  background-color: #fb2100;
+  background-color: #CC0000;
   border: none;
   color: white;
-  text-transform: uppercase;
   padding: 10px 16px;
+  margin: 0 4px;
+
+}
+.subscribe .button-member {
+  border: none;
+  padding: 10px 16px;
+  border: 1px solid #2c5fd5;
+  border-radius: 2px;
+  color: #2c5fd5;
+  font-weight: bold;
+  text-decoration: none;
+
 }
 
+.subscribe .button.active{
 
+  background-color: #ddd;
+  border: none;
+  color:#636363;
+  padding: 10px 16px;
+  
+}
 
 main {
   margin: auto;
@@ -91,7 +109,10 @@ main {
 
 .video-info {
   grid-area: video-info;
+
   padding: 0 0 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  
 }
 
 .video-info h1 {
@@ -107,10 +128,10 @@ main {
 .actions {
   grid-area: actions;
 
-  border-bottom: 1 px solid #ddd;
   padding: 0 1rem 0.5rem 1rem;
   color: #636363;
-
+  border-bottom: 1px solid #ddd;
+  
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: space-evenly;
@@ -138,7 +159,6 @@ main {
 }
 
 
-
 .channel img {
   width: 70px;
   border-radius: 50%;
@@ -163,9 +183,10 @@ main {
 
 
 .subscribe {
-  grid-area: subscribe;
 
-  padding: 3rem 3rem;
+  grid-area: subscribe;
+  
+  padding: 2rem 0rem;
   border-bottom: 1px solid #ddd;
   text-align: right;
 }
@@ -246,12 +267,10 @@ main {
       "video-player   video-player  up-next"
       "video-info     actions       up-next"
       "channel        subscribe     up-next"
-       ".                 .         up-next"                               
+       ".               .           up-next"                               
       ;
   }  
-   .video-info {
-    border-bottom: 1px solid #ddd;
-  }                                     
+                                   
 
 
 }
