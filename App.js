@@ -1,18 +1,33 @@
-//add button subscribe on-off
-const BtnSubscribe = {
-  btn: document.querySelector(".subscribe .button"),
+//DOM
+const btnsAction = document.querySelectorAll(".action>svg .fill");
+const buttonSub = document.querySelector(".subscribe .button");
 
+//handle buttons
+const DOM = {
   toggleSubscribe() {
-    this.btn.addEventListener("click", event => {
-     event.preventDefault()
-      this.btn.classList.toggle("active")
-      if (this.btn.textContent == "INSCREVA-SE") {
-        this.btn.innerText = "INSCRITO"
-      } else {
-        this.btn.innerText = "INSCREVA-SE"
-      }
-    })
-  },
-}
+    buttonSub.addEventListener("click", event => {
+      event.preventDefault();
 
-BtnSubscribe.toggleSubscribe();
+      buttonSub.classList.toggle("active");
+      if (buttonSub.textContent == "INSCREVA-SE") {
+        buttonSub.innerText = "INSCRITO";
+      } else {
+        buttonSub.innerText = "INSCREVA-SE";
+      }
+    });
+  },
+
+  ChangeColorActions() {
+    btnsAction.forEach(elem => {
+      elem.addEventListener("click", event => {
+        event.preventDefault();
+        !elem.style.fill
+          ? (elem.style.fill = "#2c5fd5")
+          : (elem.style.fill = "");
+      });
+    });
+  },
+};
+
+DOM.toggleSubscribe();
+DOM.ChangeColorActions();

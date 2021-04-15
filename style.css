@@ -246,6 +246,9 @@ main {
   .ad {
     display: none;
   }
+  .subscribe .button-member{
+    display:none;
+  }
 
 }
 
